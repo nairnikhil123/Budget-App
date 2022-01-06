@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="/Budget App/app.css">
+</head>
+<body>
+    <div class="budget-container">
+        <div class="app-title"><b>Budget App</b></div>
+        <div class="budget-header">
+            <div class="balance">
+                <div class="title">Balance</div>
+                <div class="value"><small>$</small>0</div>
+            </div>
+            <div class="account">
+                <div class="income">
+                    <div class="title">Income</div>
+                    <div class="income-total">
+                        <small>$</small>0
+                    </div>
+                </div>
+                <div class="chart">
+                    <!-- <canvas></canvas> -->
+                </div>
+                <div class="outcome">
+                    <div class="title">Outcome</div>
+                    <div class="outcome-total">
+                        <small>$</small>0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="budget-dashboard">
+            <div class="dash-title">Dashboard</div>
+            <div class="toggle">
+                <div class="tab1">Expenses</div>
+                <div class="tab2">Income</div>
+                <div class="tab3">All</div>
+            </div>
+            <div class="hide" id="expense">
+                <ul class="list"></ul>
+                <div class="input">
+                    <input type="text" id="expense-title-input" name="title" placeholder="Title">
+                    <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
+                    <div class="add-expense"><img src="/Budget App/plus.png" alt="plus"></div>
+                </div>
+            </div>
+            <div class="hide" id="income">
+                <ul class="list"></ul>
+                <div class="input">
+                    <input type="text" name="title" id="income-title-input" placeholder="Title">
+                    <input type="number" name="amount" id="income-amount-input" placeholder="$0">
+                    <div class="add-income"><img src="/Budget App/plus.png" alt=""></div>
+                </div>
+            </div>
+            <div id="all">
+                <ul class="list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
